@@ -1,10 +1,12 @@
 ﻿namespace AgendaPro.Models;
 
-public class Persona //Clase pública para representar una persona en la agenda
+public class Persona
 {
     public int Id { get; set; }
-    public string Nombre { get; set; } = string.Empty;
-    public string Telefono { get; set; } = string.Empty;
+    public string Nombre { get; set; }
+    public string Telefono { get; set; }
+
+    public Persona() { }
 
     public Persona(int id, string nombre, string telefono)
     {
@@ -12,4 +14,6 @@ public class Persona //Clase pública para representar una persona en la agenda
         Nombre = nombre;
         Telefono = telefono;
     }
+
+    public override string ToString() => $"{Id,3} | {Nombre,-15} | {Telefono,-10}";
 }
