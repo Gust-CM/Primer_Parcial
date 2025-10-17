@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
 using ElectroPlus.Models;
 
-List<Producto> productos = new();
+List<Producto> productos = new(); // Lista para almacenar productos
 CultureInfo ci = CultureInfo.InvariantCulture;
 
-while (true)
+while (true) // Bucle principal del programa
 {
     Console.WriteLine("\n--- Inventario ElectroPlus ---");
     Console.WriteLine("1) Agregar producto");

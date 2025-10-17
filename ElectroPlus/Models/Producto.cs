@@ -1,6 +1,6 @@
 ﻿namespace ElectroPlus.Models;
 
-public class Producto
+public class Producto //Clase pública para representar un producto en el inventario
 {
     public string Codigo { get; set; } = string.Empty;
     public string Nombre { get; set; } = string.Empty;
