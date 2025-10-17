@@ -1,6 +1,6 @@
 ﻿namespace AgendaPro.Models;
 
-public class Persona
+public class Persona //Clase pública para representar una persona en la agenda
 {
     public int Id { get; set; }
     public string Nombre { get; set; } = string.Empty;
